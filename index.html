@@ -1,12 +1,94 @@
-<!DOCTYPE html>
-<html lang="th">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TST Project</title>
+  <meta name="theme-color" content="#0b0912">
+  <meta name="description" content="TST Project — Trash so trust. Independent software, games, digital tools, and creator content about AI and technology.">
+  <title>TST Project — Trash so trust</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>TST Project</h1>
-  <p>เว็บไซต์ของ TST กำลังเริ่มต้น!</p>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="site-header wrap">
+    <a class="brand" href="#home" aria-label="TST Project home">
+      <span class="brand-mark">TST</span>
+      <span class="brand-copy"><strong>TST Project</strong><small>Trash so trust</small></span>
+    </a>
+    <nav>
+      <a href="#projects" data-i18n="navProjects">Projects</a>
+      <a href="#content" data-i18n="navContent">Content</a>
+      <a href="#services" data-i18n="navServices">Services</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+    <button id="languageToggle" class="lang-toggle" type="button" aria-label="Switch language">ไทย</button>
+  </header>
+
+  <main id="home">
+    <section class="hero wrap">
+      <div class="eyebrow"><span class="pulse"></span><span data-i18n="eyebrow">INDEPENDENT SOFTWARE & CREATOR STUDIO</span></div>
+      <h1 data-i18n="heroTitle">Ideas into <span class="gradient-text">useful things.</span></h1>
+      <p class="hero-lead" data-i18n="heroLead">TST Project creates software, games, and digital tools — and shares the process behind building them.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#projects" data-i18n="explore">Explore projects <span>↘</span></a>
+        <a class="button button-secondary" href="#contact" data-i18n="workWithUs">Work with TST</a>
+      </div>
+      <div class="hero-meta">
+        <span>SOFTWARE</span><i></i><span>GAMES</span><i></i><span>AI & TECH CONTENT</span>
+      </div>
+    </section>
+
+    <section class="section wrap" id="projects">
+      <div class="section-heading">
+        <div><p class="section-kicker" data-i18n="selectedWork">SELECTED WORK</p><h2 data-i18n="projectsTitle">Projects in progress and in the wild.</h2></div>
+        <p data-i18n="projectsIntro">Tools made to solve real problems and help people create.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-vn">
+          <div class="project-art art-vn" aria-hidden="true"><div class="window-top"><b></b><b></b><b></b><span>TSTVN</span></div><div class="vn-scene"><div class="moon"></div><div class="silhouette"></div><div class="dialogue"><small>CHARACTER</small><span>Every choice tells a story.</span><div class="choice"></div><div class="choice short"></div></div></div></div>
+          <div class="project-info"><div class="project-type" data-i18n="gameCreationTool">GAME CREATION TOOL</div><h3>TSTVN</h3><p data-i18n="tstvnDesc">A visual novel maker designed to help creators organize scenes, choices, characters, and endings.</p><div class="card-bottom"><span class="tag">Windows · Web export</span><a href="https://github.com/xxxzas12/TST-Visual-Novel-Maker" target="_blank" rel="noopener noreferrer" data-i18n="viewProject">View project ↗</a></div></div>
+        </article>
+        <article class="project-card project-seepho">
+          <div class="project-art art-seepho" aria-hidden="true"><div class="search-bar"><span>⌕</span> Search text in your images…</div><div class="image-row"><div class="fake-image image-a"><span>Meeting notes</span></div><div class="fake-image image-b"><span>Project plan</span></div><div class="fake-image image-c"><span>Invoice 2026</span></div></div><div class="result-panel"><span class="result-dot"></span><div><b>Found matching text</b><small>OCR · Search · Find faster</small></div><span class="result-count">03</span></div></div>
+          <div class="project-info"><div class="project-type">WINDOWS PRODUCT</div><h3>SeePho</h3><p data-i18n="seephoDesc">A desktop app that helps you find text inside screenshots and images using OCR.</p><div class="card-bottom"><span class="tag">Windows · OCR</span><a href="https://www.lemonsqueezy.com/" target="_blank" rel="noopener noreferrer" data-i18n="productInfo">Product page ↗</a></div></div>
+        </article>
+      </div>
+      <p class="small-note" data-i18n="linkNote">Note: Replace the SeePho product link with your exact product URL before publishing.</p>
+    </section>
+
+    <section class="section content-section" id="content">
+      <div class="wrap content-layout">
+        <div><p class="section-kicker" data-i18n="beyondCode">BEYOND THE CODE</p><h2 data-i18n="contentTitle">Building in public.<br><span class="muted">Sharing what we learn.</span></h2></div>
+        <div class="content-list">
+          <div class="content-item"><span class="content-number">01</span><div><h3 data-i18n="contentOne">AI & technology</h3><p data-i18n="contentOneDesc">Experiments, useful tools, and practical lessons.</p></div><span class="content-arrow">↗</span></div>
+          <div class="content-item"><span class="content-number">02</span><div><h3 data-i18n="contentTwo">Behind the build</h3><p data-i18n="contentTwoDesc">The process, problems, and progress behind TST projects.</p></div><span class="content-arrow">↗</span></div>
+          <div class="content-item"><span class="content-number">03</span><div><h3 data-i18n="contentThree">Creator journey</h3><p data-i18n="contentThreeDesc">Honest notes from learning, making, and improving.</p></div><span class="content-arrow">↗</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="services">
+      <div class="service-panel">
+        <div><p class="section-kicker" data-i18n="servicesKicker">HAVE AN IDEA?</p><h2 data-i18n="servicesTitle">Let's make it real.</h2><p data-i18n="servicesDesc">Need a small custom program or a Visual Novel project? Share your idea and requirements. We'll discuss the scope before agreeing on the work.</p></div>
+        <a class="button button-primary" href="#contact" data-i18n="discussProject">Discuss a project <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="section wrap contact-section" id="contact">
+      <p class="section-kicker" data-i18n="contactKicker">GET IN TOUCH</p>
+      <h2 data-i18n="contactTitle">Follow the work.<br><span class="muted">Start a conversation.</span></h2>
+      <p class="contact-text" data-i18n="contactDesc">Follow TST's projects and creator content, or reach out about a potential project.</p>
+      <div class="contact-links">
+        <a class="contact-link" href="https://github.com/xxxzas12" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span>↗</span></a>
+        <a class="contact-link" href="https://www.facebook.com/profile.php?id=61594954546628" target="_blank" rel="noopener noreferrer"><span>Facebook <small>TST Project</small></span><span>↗</span></a>
+        <a class="contact-link" href="https://fastwork.co/user/tstproject?source=web_marketplace_profile-menu_profile" target="_blank" rel="noopener noreferrer"><span>Fastwork <small>TST Project</small></span><span>↗</span></a>
+        <a class="contact-link" href="mailto:tstprojectforwork@gmail.com"><span>Email <small>tstprojectforwork@gmail.com</small></span><span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><a class="footer-brand" href="#home">TST Project <span>— Trash so trust</span></a><span data-i18n="footerNote">Independent creator · Built one project at a time.</span><span>© <span id="year"></span> TST Project</span></footer>
+  <script src="script.js"></script>
 </body>
 </html>
